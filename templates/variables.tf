@@ -19,4 +19,8 @@ variable "repos" {
     error_message = "The maximum repository count could be 5."
   }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7520dcd (Update files)
