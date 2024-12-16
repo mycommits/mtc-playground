@@ -1,7 +1,7 @@
 resource "github_repository" "mtc_repo" {
   for_each    = var.repos
   name        = "mtc_repo_${each.key}"
-  description = "${each.value} Code for MTC"
+  description = "${each.key} Code for MTC"
   visibility  = var.env == "dev" ? "private" : "public"
   auto_init   = true
 
